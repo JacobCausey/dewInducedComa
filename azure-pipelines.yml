@@ -19,8 +19,8 @@ stages:
     displayName: Build
     pool:
       vmImage: ubuntu-latest
-    steps:
-    - task: Docker@2
+      steps:
+      - task: Docker@2
       displayName: Run tests and start EAS
       inputs:
         command: build
