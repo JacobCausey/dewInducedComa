@@ -58,7 +58,15 @@ spec:
     - port: 80
       targetPort: 4567
 ---
-
+apiVersion: networking.gke.io/v1
+kind: ManagedCertificate
+metadata:
+  name: stedi-jacob-certificate
+spec:
+  domains:
+    - jacobcausey.cit262.com
+---
+    
 
 
 
