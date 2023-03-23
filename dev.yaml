@@ -1,0 +1,72 @@
+missing code here
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+apiVersion: v1 
+kind: Service
+metadata:
+  name: stedi-jacob-nodeport
+spec:
+  selector:
+    app: stedi-jacob-dev
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 4567
+---
+
+
+
+
+
+
+
+
+
+
+
+

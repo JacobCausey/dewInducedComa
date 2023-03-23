@@ -53,6 +53,7 @@
     "react-native-web": "0.17.7",
     "react-navigation": "^4.4.4",
     "timer": "^1.0.1",
+    "update": "^0.7.4",
     "yarn": "^1.22.11"
   },
   "devDependencies": {
