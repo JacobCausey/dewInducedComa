@@ -1,4 +1,4 @@
-missing code here
+#missing code here
 
 
 
@@ -78,7 +78,7 @@ spec:
     - http:
         paths:
         - path: /
-          pathTyoe: Prefix
+          pathType: Prefix
           backend:
             services:
               name: stedi-jacob-nodeport
