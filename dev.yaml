@@ -66,15 +66,21 @@ spec:
   domains:
     - jacobcausey.cit262.com
 ---
-    
-
-
-
-
-
-
-
-
-
-
-
+apiVersion: networking.k8s.io/v1 
+kind: Ingress
+metadata:
+  name: stedi-jacob-Ingress
+  annotations:
+    kubernetes.io/ingress.global.static-ip-name: stedi-jacob-public
+    networking.gke.io/managed-certificates: stedi-jacob-certificate
+spec:
+  rules:
+    - http:
+        paths:
+        - path: /
+          pathTyoe: Prefix
+          backend:
+            services:
+              name: stedi-jacob-nodeport
+              port:
+                number: 80
