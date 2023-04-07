@@ -19,10 +19,10 @@ spec:
             - name: REDIS_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: redis-secrets-prod
+                  name: redis-secrets-jacob
                   key: REDIS_PASS
             - name: REDIS_HOST
-              value: "redis-stedi-prod"
+              value: "redis-stedi-jacob"
             - name: REDIS_PORT
               value: "6379"
             - name: REDIS_DB
